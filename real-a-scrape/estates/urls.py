@@ -19,5 +19,6 @@ from django.urls import path
 from estates import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('estates/', views.estate_list)
+    path('estates/', views.estate_list),
+    path('estates/<int:id>', views.estate_detail)
 ]
